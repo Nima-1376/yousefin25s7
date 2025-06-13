@@ -1,5 +1,23 @@
+/*
+      <!--
+    Name: NIma yousefi
+    File: p2.html
+    Date: 13 Jun 2025
+    Part 2 of assinement 3....
+    -->
+*/
+
+
+
 html {
   font-family: sans-serif;
 }
 
+
 /* Your CSS below here */
+div{
+    /*A reasonable width for a large box, say around 200 pixels.*/
+    width: 200;
+    /*A reasonable height for a large box, centering the text vertically in the process.*/
+    height: 150;
+}
