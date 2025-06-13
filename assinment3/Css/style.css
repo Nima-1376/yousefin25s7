@@ -1,3 +1,11 @@
+/*
+    Name: NIma yousefi
+    File: p2.html
+    Date: 13 Jun 2025
+    Part 1 of assinement 3....
+
+
+*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,4 +33,11 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+/*
+Make the level one heading pink, using the CSS color keyword hotpink.
+*/
+h1{
+    color: hotpink;
 }
