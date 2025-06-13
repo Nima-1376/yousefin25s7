@@ -62,3 +62,10 @@ ul{
     border: solid 5px purple;
     padding: 20px;
 }
+
+/*
+Make the links green on hover.
+*/
+a:hover{
+    color: greenyellow;
+}
