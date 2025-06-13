@@ -20,4 +20,6 @@ div{
     width: 200;
     /*A reasonable height for a large box, centering the text vertically in the process.*/
     height: 150;
+    /* centers the box horizontally */
+    margin: 0 auto; 
 }
