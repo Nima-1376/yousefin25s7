@@ -16,13 +16,21 @@ html {
 
 /* Your CSS below here */
 div{
+    
     border: 10px solid black;
     /*A reasonable width for a large box, say around 200 pixels.*/
     width: 200;
+
     /*A reasonable height for a large box, centering the text vertically in the process.*/
-    height: 150;
-    display: table-cell;
-    vertical-align: middle;
+    height: 150px;
+
     /* centers the box horizontally */
-    margin: 0 auto; 
+    margin: 0 auto;
+
+    /*Center the text within the box.*/
+      
+    display: flex;
+    align-items: center;  /* vertical centering */
+    justify-content: center; /* horizontal centering of text */
+    text-align: center;
 }
