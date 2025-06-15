@@ -33,4 +33,8 @@ div{
     align-items: center;  /* vertical centering */
     justify-content: center; /* horizontal centering of text */
     text-align: center;
+
+      font-size: 1.1rem; /* around 17.6px if 1rem = 16px */
+  /* 1.1 * 16 = 17.6px, which satisfies the 17-18px requirement */
+
 }
