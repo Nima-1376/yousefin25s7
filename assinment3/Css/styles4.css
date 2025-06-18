@@ -66,3 +66,17 @@ body {
   main article img{
     float: left;
   }
+
+  main.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main.grid article {
+  flex: 2;
+  min-width: 300px;
+  }
+  main.grid aside {
+  flex: 1;
+  min-width: 200px;
+  }
