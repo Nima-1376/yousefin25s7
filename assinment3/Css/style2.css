@@ -39,4 +39,10 @@ div{
 
   /* Base background color */
   background-color: #3498db; /* soft blue */
+
+        /* Contrasting text color and black text shadow */
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+
+
 }
