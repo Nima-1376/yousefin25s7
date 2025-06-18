@@ -14,56 +14,71 @@ html {
 }
 
 
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  background: white;       
+}
+
 /* Your CSS below here */
-div{
-    
-    border: 10px solid black;
-    /*A reasonable width for a large box, say around 200 pixels.*/
-    width: 200;
+div {
 
-    /*A reasonable height for a large box, centering the text vertically in the process.*/
-    height: 150px;
+  border: 10px solid black;
+  /*A reasonable width for a large box, say around 200 pixels.*/
+  width: 1400px;
 
-    /* centers the box horizontally */
-    margin: 0 auto;
+  /*A reasonable height for a large box, centering the text vertically in the process.*/
+  height: 700px;
 
-    /*Center the text within the box.*/
-      
-    display: flex;
-    align-items: center;  /* vertical centering */
-    justify-content: center; /* horizontal centering of text */
-    text-align: center;
+  /* centers the box horizontally */
 
-      font-size: 1.1rem; /* around 17.6px if 1rem = 16px */
+
+  /*Center the text within the box.*/
+
+  display: flex;
+  align-items: center;
+  /* vertical centering */
+  justify-content: center;
+  /* horizontal centering of text */
+  text-align: center;
+
+  font-size: 1.1rem;
+  /* around 17.6px if 1rem = 16px */
   /* 1.1 * 16 = 17.6px, which satisfies the 17-18px requirement */
 
   /* Base background color */
-  background-color: #3498db; /* soft blue */
+  background-color: #3498db;
+  /* soft blue */
 
   /* Contrasting text color and black text shadow */
   color: #fff;
   text-shadow: 1px 1px 2px black;
 
-   /* Subtle border radius */
+  /* Subtle border radius */
   border-radius: 10px;
 
-  
+
   /* 1px solid border slightly darker than background */
   border: 1px solid #2980b9;
-    /* Linear semi-transparent gradient */
+  /* Linear semi-transparent gradient */
   background-image:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 30%,
-      rgba(0, 0, 0, 0.2) 100%
-    );
+      rgba(0, 0, 0, 0.2) 100%);
 
-      /* Multiple box shadows */
+  /* Multiple box shadows */
   box-shadow:
-    3px 3px 8px rgba(0, 0, 0, 0.3),         /* outer shadow to lift */
-    inset 2px 2px 4px rgba(255, 255, 255, 0.3),  /* inner light top-left */
-    inset -2px -2px 4px rgba(0, 0, 0, 0.3);      /* inner dark bottom-right */
+    3px 3px 8px rgba(0, 0, 0, 0.3),
+    /* outer shadow to lift */
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    /* inner light top-left */
+    inset -2px -2px 4px rgba(0, 0, 0, 0.3);
+  /* inner dark bottom-right */
 
 
 }
