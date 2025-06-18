@@ -14,7 +14,7 @@ html {
 }
 
 
-
+/* To center the box exactly in the middle of the entire page, i need to use flexbox on the <body> element. */
 body {
   margin: 0;
   height: 100vh;
@@ -29,10 +29,10 @@ div {
 
   border: 10px solid black;
   /*A reasonable width for a large box, say around 200 pixels.*/
-  width: 1400px;
+  width: 200px;
 
   /*A reasonable height for a large box, centering the text vertically in the process.*/
-  height: 700px;
+  height: 150px;
 
   /* centers the box horizontally */
 
