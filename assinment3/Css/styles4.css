@@ -58,3 +58,7 @@ body {
   nav ul li{
     flex: 1;
   }
+  nav {
+  position: sticky;
+    top: 10px;
+  }
