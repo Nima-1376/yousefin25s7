@@ -47,5 +47,7 @@ div{
    /* Subtle border radius */
   border-radius: 10px;
 
-
+  
+  /* 1px solid border slightly darker than background */
+  border: 1px solid #2980b9;
 }
