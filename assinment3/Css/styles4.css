@@ -62,3 +62,7 @@ body {
   position: sticky;
     top: 10px;
   }
+
+  main article img{
+    float: left;
+  }
