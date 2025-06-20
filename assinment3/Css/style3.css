@@ -61,3 +61,16 @@ body {
   letter-spacing: 0.3px;
   word-spacing: 0.5px;
 }
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
