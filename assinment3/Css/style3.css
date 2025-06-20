@@ -105,3 +105,13 @@ a[href^="http"]::after {
   content: url('https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-finished/external-link-52.png');
   padding-left: 4px;
 }
+/* List styles */
+ul, ol {
+  margin: 1em 0;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  line-height: 1.6;
+  list-style-type: square;
+}
