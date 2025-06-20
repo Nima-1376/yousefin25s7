@@ -1,3 +1,9 @@
+/*
+    Name: NIma yousefi
+    File: style3.css
+    Date: 13 Jun 2025
+    Part 3 of assinement 3....
+*/
 /* General setup */
 
 * {
@@ -42,9 +48,10 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
 
-/* Font setup */
+
+/* ------------------ Font Setup ------------------ */
+/* Importing and applying custom fonts using @font-face */
 @font-face {
   font-family: 'Lora';
   src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJMkq1Y.woff2') format('woff2');
@@ -54,6 +61,9 @@ header, footer {
   font-family: 'Josefin Slab';
   src: url('https://fonts.gstatic.com/s/josefinslab/v24/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4pM6Bw8LQ.woff2') format('woff2');
 }
+/* ------------------ Base Body Styling ------------------ */
+/* Sets global font, sizing, spacing for body text */
+
 body {
   font-family: 'Lora', serif;
   font-size: 10px;
@@ -61,6 +71,9 @@ body {
   letter-spacing: 0.3px;
   word-spacing: 0.5px;
 }
+/* ------------------ Headings ------------------ */
+/* Apply heading font, sizing, and alignment */
+
 
 h1 {
   font-family: 'Josefin Slab', serif;
@@ -74,11 +87,16 @@ h2 {
   letter-spacing: 1px;
   font-size: 2rem;
 }
-/* Indent first paragraph in each section */
+/* ------------------ Paragraph Styling ------------------ */
+/* Indent the first paragraph after each heading */
+
 section h2 + p {
   text-indent: 20px;
 }
-/* Links */
+
+/* ------------------ Link Styling ------------------ */
+/* Set default, visited, hover, focus, and active styles */
+
 a {
   color: #a66;
   text-decoration: underline;
@@ -100,12 +118,24 @@ a:active {
   padding: 2px 4px;
   border-radius: 3px;
 }
-/* External link icon for specific external URLs */
+/* ------------------ External Link Icon ------------------ */
+/* Add an icon after links that start with "http" */
+/* Scaled down and vertically aligned to match text */
+
 a[href^="http"]::after {
-  content: url('https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-finished/external-link-52.png');
-  padding-left: 4px;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url('https://mdn.github.io/learning-area/css/styling-text/typesetting-a-homepage-finished/external-link-52.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4px;
+  transform: translateY(2px);
 }
-/* List styles */
+/* ------------------ Lists ------------------ */
+/* Consistent spacing and bullet style for lists */
+
 ul, ol {
   margin: 1em 0;
   padding-left: 20px;
@@ -115,7 +145,9 @@ ul li, ol li {
   line-height: 1.6;
   list-style-type: square;
 }
-/* Nav Menu */
+/* ------------------ Navigation Menu ------------------ */
+/* Vertical sidebar menu with styled links */
+
 nav ul {
   list-style: none;
   padding: 0;
