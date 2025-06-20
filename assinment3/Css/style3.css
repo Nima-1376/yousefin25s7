@@ -43,3 +43,21 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Font setup */
+@font-face {
+  font-family: 'Lora';
+  src: url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJMkq1Y.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('https://fonts.gstatic.com/s/josefinslab/v24/lW-swjwOK3Ps5GSJlNNkMalNpiZe_ldbOR4pM6Bw8LQ.woff2') format('woff2');
+}
+body {
+  font-family: 'Lora', serif;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  word-spacing: 0.5px;
+}
