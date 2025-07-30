@@ -53,3 +53,16 @@ update() {
   this.x += this.velX;
   this.y += this.velY;
 }
+collisionDetect() {
+  for (const other of balls) {
+    if (this !== other) {
+      const dx = this.x - other.x;
+      const dy = this.y - other.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < this.size + other.size) {
+        this.color = other.color = randomRGB();
+      }
+    }
+  }
+}
