@@ -4,7 +4,7 @@
  * Date: 30 July 2025
  * Description: JavaScript for dynamically generating image thumbnails,
  * updating main image on click, and toggling a dark/light overlay.
- /*
+ **/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
@@ -25,12 +25,12 @@ const imageAlts = {
 //  Loop through images and generate thumbnails
 imageFilenames.forEach(filename => {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', `./img/${filename}`);
+  newImage.setAttribute('src', `./Img/${filename}`);
   newImage.setAttribute('alt', imageAlts[filename]);
   thumbBar.appendChild(newImage);
 //  Add click event to update main image
   newImage.addEventListener('click', () => {
-    displayedImage.setAttribute('src', `./img/${filename}`);
+    displayedImage.setAttribute('src', `./Img/${filename}`);
     displayedImage.setAttribute('alt', imageAlts[filename]);
   });
 });
