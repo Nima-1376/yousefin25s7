@@ -45,3 +45,5 @@ function result() {
     story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+// ✅ Event listener to trigger generation
+randomize.addEventListener('click', result);
