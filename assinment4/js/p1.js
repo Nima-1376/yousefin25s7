@@ -22,3 +22,13 @@ function result() {
   if (customName.value !== '') {
     newStory = newStory.replaceAll('Bob', customName.value);
   }
+  // Unit conversion for UK
+  if (document.getElementById("uk").checked) {
+    // Convert Fahrenheit to Centigrade
+    let temperature = Math.round((94 - 32) * 5 / 9);
+    newStory = newStory.replace("94 Fahrenheit", `${temperature} centigrade`);
+
+    // Convert pounds to stone
+    let weight = Math.round(300 / 14);
+    newStory = newStory.replace("300 pounds", `${weight} stone`);
+  }
