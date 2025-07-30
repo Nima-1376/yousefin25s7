@@ -3,6 +3,16 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
+// Random story parts
+const storyText = "It was 94 Fahrenheit outside, so Bob went for a walk. \
+When they got to :insertx:, they stared in horror for a few moments, then \
+:inserty:. Bob saw the whole thing, but was not surprised — \
+:insertz:. It weighed 300 pounds.";
+
+const insertX = ["the park", "the zoo", "the haunted house"];
+const insertY = ["spontaneously combusted", "danced a tango", "screamed and ran away"];
+const insertZ = ["it happens every day", "that's just Bob's luck", "the weather was to blame"];
+
 // Sample story
 function randomValueFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
