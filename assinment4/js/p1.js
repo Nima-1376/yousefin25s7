@@ -32,3 +32,6 @@ function result() {
     let weight = Math.round(300 / 14);
     newStory = newStory.replace("300 pounds", `${weight} stone`);
   }
+    story.textContent = newStory;
+  story.style.visibility = 'visible';
+}
