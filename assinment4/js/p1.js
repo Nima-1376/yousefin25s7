@@ -17,7 +17,7 @@ function result() {
   newStory = newStory.replace(':insertx:', xItem);
   newStory = newStory.replace(':inserty:', yItem);
   newStory = newStory.replace(':insertz:', zItem);
-}
+
   // Replace name if provided
   if (customName.value !== '') {
     newStory = newStory.replaceAll('Bob', customName.value);
