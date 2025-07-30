@@ -108,7 +108,22 @@ class EvilCircle extends Shape {
     if (this.y + this.size > height) this.y = height - this.size;
     if (this.y - this.size < 0) this.y = this.size;
   }
+    collisionDetect() {
+    for (const ball of balls) {
+      if (ball.exists) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
+        if (distance < this.size + ball.size) {
+          ball.exists = false;
+          ballCount--;
+          ballCountPara.textContent = `Ball count: ${ballCount}`;
+        }
+      }
+    }
+  }
+}
 const balls = [];
 
 while (balls.length < 25) {
