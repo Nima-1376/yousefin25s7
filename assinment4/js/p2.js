@@ -4,8 +4,7 @@
  * Date: 30 July 2025
  * Description: JavaScript for dynamically generating image thumbnails,
  * updating main image on click, and toggling a dark/light overlay.
- *
- * /
+ /*
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
