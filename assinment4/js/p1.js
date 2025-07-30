@@ -7,3 +7,14 @@ const story = document.querySelector('.story');
 function randomValueFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+function result() {
+  let newStory = storyText;
+
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
+
+  newStory = newStory.replace(':insertx:', xItem);
+  newStory = newStory.replace(':inserty:', yItem);
+  newStory = newStory.replace(':insertz:', zItem);
+}
