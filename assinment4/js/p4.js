@@ -1,3 +1,11 @@
+/**
+ * Name: Nima Yousefi
+ * File: p4.js
+ * Date: 30 July 2025
+ * Description: JavaScript animation using Canvas API to simulate bouncing balls
+ * and an evil circle that eats them. Balls bounce off walls and change color on collision.
+ * EvilCircle is controlled via keyboard and removes balls upon contact.
+ */
 // set up canvas
 
 const canvas = document.querySelector("canvas");

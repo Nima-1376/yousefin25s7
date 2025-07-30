@@ -1,3 +1,12 @@
+/**
+ * Name: Nima Yousefi
+ * File: silly-story.js
+ * Date: 30 July 2025
+ * Description: JavaScript-based silly story generator.
+ * Randomly generates parts of a story using predefined arrays.
+ * Allows user to input a custom name and choose between US/UK units.
+ * Final story is shown dynamically on the page when the user clicks the "randomize" button.
+ */
 // Setup
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
