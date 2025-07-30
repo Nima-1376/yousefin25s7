@@ -144,15 +144,22 @@ ballCountPara.textContent = `Ball count: ${ballCount}`;
 // Create evil circle
 const evil = new EvilCircle(width / 2, height / 2);
 
+// Animation loop
 function loop() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillStyle = 'rgb(0 0 0 / 25%)';
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  evil.draw();
+  evil.checkBounds();
+  evil.collisionDetect();
 
   requestAnimationFrame(loop);
 }
