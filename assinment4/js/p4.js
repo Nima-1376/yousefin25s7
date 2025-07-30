@@ -141,6 +141,9 @@ while (balls.length < 25) {
 }
 ballCountPara.textContent = `Ball count: ${ballCount}`;
 
+// Create evil circle
+const evil = new EvilCircle(width / 2, height / 2);
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
