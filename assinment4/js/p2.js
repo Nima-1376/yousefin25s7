@@ -21,3 +21,9 @@ imageFilenames.forEach(filename => {
   newImage.setAttribute('src', images/${filename});
   newImage.setAttribute('alt', imageAlts[filename]);
   thumbBar.appendChild(newImage);
+//  Add click event to update main image
+  newImage.addEventListener('click', () => {
+    displayedImage.setAttribute('src', images/${filename});
+    displayedImage.setAttribute('alt', imageAlts[filename]);
+  });
+});
