@@ -126,6 +126,8 @@ class EvilCircle extends Shape {
 }
 // Create balls
 const balls = [];
+let ballCount = 0;
+const ballCountPara = document.querySelector('p');
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
@@ -146,7 +148,7 @@ const evil = new EvilCircle(width / 2, height / 2);
 
 // Animation loop
 function loop() {
-  ctx.fillStyle = 'rgb(0 0 0 / 25%)';
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
