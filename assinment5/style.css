@@ -269,3 +269,15 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
+/* High-contrast table header */
+table thead th,
+th[scope="col"] {
+  background: #0b3d91; /* AA+ on white */
+  color: #fff;
+  border-bottom: none;
+}
+
+/* Stronger zebra striping for rows (better contrast) */
+tbody tr:nth-child(odd) { background: #e7f1ff; } /* a bit darker than #def */
+tbody tr:nth-child(even) { background: #ffffff; }
