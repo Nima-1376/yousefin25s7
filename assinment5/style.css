@@ -281,3 +281,20 @@ th[scope="col"] {
 /* Stronger zebra striping for rows (better contrast) */
 tbody tr:nth-child(odd) { background: #e7f1ff; } /* a bit darker than #def */
 tbody tr:nth-child(even) { background: #ffffff; }
+
+/* Ensure readable text on tinted panels */
+.secondary,
+.comments,
+footer,
+article {
+  color: #1a1a1a; /* darker body text for contrast */
+}
+
+/* Article links: distinguish + accessible for color blindness */
+article a {
+  color: #0645ad;        /* standard link blue with good contrast */
+  text-decoration: underline;
+}
+article a:hover {
+  text-decoration: none;
+}
