@@ -49,23 +49,28 @@ p, li, table {
   line-height: 1.5;
 }
 
-/* || header layout */
+/* || header/layout + colors (A11Y fix) */
 
 div[class="nav"], article, footer, .secondary {
   background-color: green;
 }
 
 article, footer, .secondary {
+  background-color: #fff;
+}
+.secondary {
+  background-color: #f5f8ff;
+}
+article, footer, .secondary {
   padding: 10px 30px;
 }
 
-article {
-  margin-right: 10px;
-}
+article { margin-right: 10px; }
+
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #0b3d91;  
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -78,6 +83,7 @@ div[class="nav"] ul {
   display: flex;
 }
 
+
 div[class="nav"] li {
   display: inline;
   text-align: center;
@@ -89,7 +95,21 @@ div[class="nav"] a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #fff;                 
+}
+
+a:focus,
+button:focus,
+.show-hide:focus,
+.search input[type="submit"]:focus,
+.comment-form input[type="submit"]:focus {
+  outline: 3px solid #0b3d91;
+  outline-offset: 2px;
+}
+
+div[class="nav"] a:hover,
+article a:hover {
+  text-decoration: underline;
 }
 
 div[class="nav"] .search {
@@ -99,6 +119,7 @@ div[class="nav"] .search {
   height: 100%;
   padding: 0 2em;
 }
+
 
 .search input {
   font-size: 1.6rem;
